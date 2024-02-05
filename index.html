@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Button Styler</title>
+  </head>
+  <body>
+    <h1>Button Styles Generator</h1>
+    <section class="showcase">
+      <div class="container">
+        <button id="button">your text</button>
+      </div>
+    </section>
+    <section class="adjust">
+      <div class="style">
+        <p class="style-text">padding</p>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="20"
+          class="slider padding"
+        />
+      </div>
+
+      <div class="style">
+        <p class="style-text">border radius</p>
+        <input
+          type="range"
+          min="0"
+          max="50"
+          value="0"
+          class="slider b-radius"
+        />
+      </div>
+
+      <div class="style">
+        <p class="style-text">Font size</p>
+        <input
+          type="range"
+          min="10"
+          max="80"
+          value="16"
+          class="slider font-size"
+        />
+      </div>
+
+      <div class="style">
+        <p class="style-text">border top width</p>
+        <input
+          type="range"
+          min="0"
+          max="40"
+          value="0"
+          class="slider borderTopWidth"
+        />
+      </div>
+      <div class="style">
+        <p class="style-text">border bottom width</p>
+        <input
+          type="range"
+          min="0"
+          max="40"
+          value="0"
+          class="slider borderBottomWidth"
+        />
+      </div>
+      <div class="style">
+        <p class="style-text">border right width</p>
+        <input
+          type="range"
+          min="0"
+          max="40"
+          value="0"
+          class="slider borderRightWidth"
+        />
+      </div>
+      <div class="style">
+        <p class="style-text">border left width</p>
+        <input
+          type="range"
+          min="0"
+          max="40"
+          value="0"
+          class="slider borderLeftWidth"
+        />
+      </div>
+
+      <div class="style">
+        <p class="style-text">text color</p>
+        <input type="color" class="colorPicker slider" />
+      </div>
+      <div class="style">
+        <p class="style-text">background color</p>
+        <input type="color" class="bgPicker slider" />
+      </div>
+
+      <div class="style">
+        <p class="style-text">Font Weight</p>
+        <select class="font-weight">
+          <option value="normal">Normal</option>
+          <option value="bold">Bold</option>
+          <option value="bolder">Bolder</option>
+          <option value="lighter">Lighter</option>
+        </select>
+      </div>
+
+      <div class="style">
+        <p class="style-text">Box Shadow</p>
+        <div class="shadow-options-container">
+          <div class="shadow-option">
+            <label for="hOffset">Horizontal Offset:</label>
+            <input type="text" id="hOffset" />
+          </div>
+          <div class="shadow-option">
+            <label for="vOffset">Vertical Offset:</label>
+            <input type="text" id="vOffset" />
+          </div>
+          <div class="shadow-option">
+            <label for="blurRadius">Blur Radius:</label>
+            <input type="text" id="blurRadius" />
+          </div>
+          <div class="shadow-option">
+            <label for="spreadRadius">Spread Radius:</label>
+            <input type="text" id="spreadRadius" />
+          </div>
+          <div class="shadow-option">
+            <label for="shadowColor">Shadow Color:</label>
+            <input type="color" id="shadowColor" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- expoooooortssss-->
+    <section class="export">
+      <h2>Exported Styles:</h2>
+      <div class="code-container">
+        <div class="button-container">
+          <button class="copy-button" onclick="copyStyles()">
+            Copy styles
+          </button>
+        </div>
+        <code class="code">
+          <div class="container-style">
+            <div class="atribute">font-size:</div>
+            <div class="value" id="font-sizee"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">box-shadow:</div>
+            <div class="value" id="box-shadoww"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">font-weight:</div>
+            <div class="value" id="font-weightt"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">padding:</div>
+            <div class="value" id="paddingg"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">color:</div>
+            <div class="value" id="colorr"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">line-height:</div>
+            <div class="value" id="line-heightt"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">height:</div>
+            <div class="value" id="heightt"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">width:</div>
+            <div class="value" id="widthh"></div>
+          </div>
+          <div class="container-style">
+            <div class="atribute">border:</div>
+            <div class="value" id="borderr"></div>
+          </div>
+        </code>
+      </div>
+    </section>
+
+    <footer>Made by Zakaria LOURGHI</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif; /* Use a more common font for better compatibility */
+}
+
+h1 {
+  padding: 20px; /* Increased padding for a more prominent heading */
+  background-color: #2c3e50; /* Use a darker color for better contrast */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+button {
+  padding: 15px;
+  font-size: 1em; /* Adjusted font size for better readability */
+  cursor: pointer;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.showcase {
+  width: 80%;
+  overflow: hidden;
+  background-color: #ecf0f1; /* Lighter background color for better contrast */
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Added margin for separation */
+}
+
+.adjust {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.style {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 20px; /* Increased margin for separation */
+}
+
+.style-text {
+  color: #5d7185; /* Darker text color for better visibility */
+  font-size: 18px; /* Slightly reduced font size for better balance */
+}
+
+.shadow-options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Added margin for separation */
+}
+
+.shadow-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shadow-option label {
+  margin-bottom: 5px;
+}
+
+.value {
+  color: #2c3e50; /* Darker text color for better visibility */
+}
+
+.container-style {
+  display: flex;
+}
+
+.code-container {
+  border: 3px outset #6898f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Increased padding for a more structured appearance */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  color: #6898f3;
+  min-width: 450px;
+  max-width: 650px;
+  overflow: auto; /* Added overflow for long code snippets */
+}
+
+h2 {
+  margin-bottom: 20px; /* Increased margin for separation */
+}
+
+footer {
+  padding: 20px; /* Increased padding for a more substantial footer */
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 20px; /* Added margin for separation */
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.8em;
+  border-radius: 5px;
+}
+/* Existing styles */
+
+/* Add responsive styles for the code section */
+@media only screen and (max-width: 768px) {
+  .code-container {
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  h2 {
+    margin-left: 20px;
+  }
+  code {
+    min-width: unset;
+    max-width: unset;
+  }
+}
